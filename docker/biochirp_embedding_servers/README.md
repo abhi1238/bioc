@@ -15,9 +15,11 @@ docker build -t biochirp_embedding_server .
 
 ## Step 2: Run the Embedding Server
 
-You can run each embedding server in foreground mode (see logs in terminal) or detached mode (run in background).
+You can run individual embedding servers, or all servers at once.
 
-### A. Foreground Mode (default, shows logs)
+### **Option A: Run a Single Embedding Server**
+
+### 1. Foreground Mode (default, shows logs)
 
 ```bash
 docker compose -f docker-compose-biochirp_wikimedical.yml up
@@ -34,7 +36,7 @@ docker compose -f docker-compose-biochirp_biolord.yml up
 * To stop the server, use Ctrl+C.
 
 
-### B. Detached Mode (optional, runs in background)
+### 2. Detached Mode (optional, runs in background)
 
 If you want to run any server in the background (no logs in terminal), add -d:
 
@@ -53,5 +55,36 @@ docker compose -f docker-compose-biochirp_biolord.yml up -d
 docker compose -f docker-compose-biochirp_wikimedical.yml down
 
 ```
+
+### **Option B: Run All Embedding Servers Together (Recommended)**
+
+Run all models in one go (best for full deployment/benchmarking):
+
+```bash
+docker compose -f docker-compose.biochirp_all.yml up
+```
+
+Shows logs for all servers in one terminal.
+Stop all servers with Ctrl+C.
+
+
+* To run in background (detached mode):
+```bash
+docker compose -f docker-compose.biochirp_all.yml up -d
+```
+
+* To run in background (detached mode):
+
+```bash
+docker compose -f docker-compose.biochirp_all.yml up -d
+```
+
+* Stop with:
+
+```bash
+docker compose -f docker-compose.biochirp_all.yml down
+```
+
+
 
 
