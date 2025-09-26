@@ -1,0 +1,484 @@
+2025-09-26 00:09:09,372 [INFO] uvicorn.error: Started server process [810357]
+2025-09-26 00:09:09,372 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:09:09,372 [INFO] uvicorn.error: [startup] PID=810357: initializing resources...
+2025-09-26 00:09:30,551 [INFO] uvicorn.error: [startup] PID=810357: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 21.18s
+2025-09-26 00:09:30,551 [INFO] uvicorn.error: [startup] PID=810357: orchestrator agent ready
+2025-09-26 00:09:30,551 [INFO] uvicorn.error: [startup] PID=810357: complete in 21.18s
+2025-09-26 00:09:30,551 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:12:12,933 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:12:13,033 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:12:13,033 [INFO] uvicorn.error: [shutdown] PID=810357: cleanup complete
+2025-09-26 00:12:13,034 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:12:13,034 [INFO] uvicorn.error: Finished server process [810357]
+2025-09-26 00:12:59,982 [INFO] uvicorn.error: Started server process [820169]
+2025-09-26 00:12:59,983 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:12:59,983 [INFO] uvicorn.error: [startup] PID=820169: initializing resources...
+2025-09-26 00:13:22,447 [INFO] uvicorn.error: [startup] PID=820169: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 22.46s
+2025-09-26 00:13:22,447 [INFO] uvicorn.error: [startup] PID=820169: orchestrator agent ready
+2025-09-26 00:13:22,448 [INFO] uvicorn.error: [startup] PID=820169: complete in 22.46s
+2025-09-26 00:13:22,448 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:16:50,741 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:16:50,842 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:16:50,842 [INFO] uvicorn.error: [shutdown] PID=820169: cleanup complete
+2025-09-26 00:16:50,843 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:16:50,843 [INFO] uvicorn.error: Finished server process [820169]
+2025-09-26 00:17:38,464 [INFO] uvicorn.error: Started server process [831629]
+2025-09-26 00:17:38,465 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:17:38,465 [INFO] uvicorn.error: [startup] PID=831629: initializing resources...
+2025-09-26 00:17:38,466 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:17:38,466 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:17:38,467 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:17:38,468 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:17:38,471 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:17:41,668 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:17:41,695 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:17:42,770 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 00:17:43,057 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:17:47,054 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:17:47,055 [INFO] uvicorn.error: [Model] preload complete (5/5) loaded
+2025-09-26 00:17:47,055 [INFO] uvicorn.error: [startup] PID=831629: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.59s
+2025-09-26 00:17:47,055 [INFO] uvicorn.error: [startup] PID=831629: orchestrator agent ready
+2025-09-26 00:17:47,056 [INFO] uvicorn.error: [startup] PID=831629: complete in 8.59s
+2025-09-26 00:17:47,056 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:28:56,317 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:28:56,417 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:28:56,417 [INFO] uvicorn.error: [shutdown] PID=831629: cleanup complete
+2025-09-26 00:28:56,418 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:28:56,418 [INFO] uvicorn.error: Finished server process [831629]
+2025-09-26 00:29:08,600 [INFO] uvicorn.error: Started server process [858442]
+2025-09-26 00:29:08,600 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:29:08,601 [INFO] uvicorn.error: [startup] PID=858442: initializing resources...
+2025-09-26 00:29:08,601 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:29:08,602 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:29:08,602 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:29:08,604 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:29:08,607 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:29:11,291 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:29:12,263 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:29:12,952 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 00:29:13,272 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:29:18,208 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:29:18,209 [INFO] uvicorn.error: [Model] preload complete (5/5) loaded
+2025-09-26 00:29:18,209 [INFO] uvicorn.error: [startup] PID=858442: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 9.61s
+2025-09-26 00:29:18,209 [INFO] uvicorn.error: [startup] PID=858442: orchestrator agent ready
+2025-09-26 00:29:18,209 [INFO] uvicorn.error: [startup] PID=858442: complete in 9.61s
+2025-09-26 00:29:18,210 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:41:14,110 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:41:14,210 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:41:14,210 [INFO] uvicorn.error: [shutdown] PID=858442: cleanup complete
+2025-09-26 00:41:14,211 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:41:14,211 [INFO] uvicorn.error: Finished server process [858442]
+2025-09-26 00:42:35,662 [INFO] uvicorn.error: Started server process [890252]
+2025-09-26 00:42:35,663 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:42:35,663 [INFO] uvicorn.error: [startup] PID=890252: initializing resources...
+2025-09-26 00:42:35,664 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:42:35,664 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:42:35,665 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:42:35,667 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:42:35,668 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:42:38,268 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:42:38,759 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:42:40,000 [ERROR] uvicorn.error: [Model] FAILED to load 'nuvocare/WikiMedical_sent_biobert': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:42:40,207 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:42:44,070 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:42:44,071 [INFO] uvicorn.error: [Model] preload complete (4/5) loaded
+2025-09-26 00:42:44,071 [ERROR] uvicorn.error: [Model] errors for: ['nuvocare/WikiMedical_sent_biobert']
+2025-09-26 00:42:44,071 [INFO] uvicorn.error: [startup] PID=890252: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.41s
+2025-09-26 00:42:44,072 [INFO] uvicorn.error: [startup] PID=890252: orchestrator agent ready
+2025-09-26 00:42:44,072 [INFO] uvicorn.error: [startup] PID=890252: complete in 8.41s
+2025-09-26 00:42:44,072 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:43:14,948 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:43:15,049 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:43:15,049 [INFO] uvicorn.error: [shutdown] PID=890252: cleanup complete
+2025-09-26 00:43:15,050 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:43:15,050 [INFO] uvicorn.error: Finished server process [890252]
+2025-09-26 00:43:28,691 [INFO] uvicorn.error: Started server process [892592]
+2025-09-26 00:43:28,691 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:43:28,692 [INFO] uvicorn.error: [startup] PID=892592: initializing resources...
+2025-09-26 00:43:28,692 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:43:28,693 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:43:28,695 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:43:28,696 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:43:28,701 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:43:31,141 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:43:31,886 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:43:32,662 [ERROR] uvicorn.error: [Model] FAILED to load 'nuvocare/WikiMedical_sent_biobert': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:43:34,127 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:43:37,222 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:43:37,223 [INFO] uvicorn.error: [Model] preload complete (4/5) loaded
+2025-09-26 00:43:37,223 [ERROR] uvicorn.error: [Model] errors for: ['nuvocare/WikiMedical_sent_biobert']
+2025-09-26 00:43:37,223 [INFO] uvicorn.error: [startup] PID=892592: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.53s
+2025-09-26 00:43:37,223 [INFO] uvicorn.error: [startup] PID=892592: orchestrator agent ready
+2025-09-26 00:43:37,223 [INFO] uvicorn.error: [startup] PID=892592: complete in 8.53s
+2025-09-26 00:43:37,224 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:49:49,818 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:49:49,919 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:49:49,919 [INFO] uvicorn.error: [shutdown] PID=892592: cleanup complete
+2025-09-26 00:49:49,919 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:49:49,919 [INFO] uvicorn.error: Finished server process [892592]
+2025-09-26 00:50:01,045 [INFO] uvicorn.error: Started server process [907863]
+2025-09-26 00:50:01,046 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:50:01,046 [INFO] uvicorn.error: [startup] PID=907863: initializing resources...
+2025-09-26 00:50:01,046 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:50:01,047 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:50:01,048 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:50:01,049 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:50:01,050 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:50:04,302 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:50:04,354 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:50:05,397 [ERROR] uvicorn.error: [Model] FAILED to load 'nuvocare/WikiMedical_sent_biobert': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:50:05,668 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:50:09,177 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:50:09,178 [INFO] uvicorn.error: [Model] preload complete (4/5) loaded
+2025-09-26 00:50:09,178 [ERROR] uvicorn.error: [Model] errors for: ['nuvocare/WikiMedical_sent_biobert']
+2025-09-26 00:50:09,179 [INFO] uvicorn.error: [startup] PID=907863: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.13s
+2025-09-26 00:50:09,179 [INFO] uvicorn.error: [startup] PID=907863: orchestrator agent ready
+2025-09-26 00:50:09,179 [INFO] uvicorn.error: [startup] PID=907863: complete in 8.13s
+2025-09-26 00:50:09,179 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:51:19,149 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:51:19,250 [INFO] uvicorn.error: Finished server process [907863]
+2025-09-26 00:51:19,250 [INFO] uvicorn.error: [shutdown] PID=907863: cleanup complete
+2025-09-26 00:51:19,269 [ERROR] uvicorn.error: Traceback (most recent call last):
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/starlette/routing.py", line 700, in lifespan
+    await receive()
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/asyncio/queues.py", line 159, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2025-09-26 00:51:32,197 [INFO] uvicorn.error: Started server process [911636]
+2025-09-26 00:51:32,198 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:51:32,198 [INFO] uvicorn.error: [startup] PID=911636: initializing resources...
+2025-09-26 00:51:32,198 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:51:32,199 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:51:32,200 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:51:32,202 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:51:32,206 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:51:34,550 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:51:36,288 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:51:36,574 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:51:36,930 [ERROR] uvicorn.error: [Model] FAILED to load 'nuvocare/WikiMedical_sent_biobert': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:51:40,885 [ERROR] uvicorn.error: [Model] FAILED to load 'pritamdeka/S-PubMedBERT-MS-MARCO': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:51:40,886 [INFO] uvicorn.error: [Model] preload complete (3/5) loaded
+2025-09-26 00:51:40,887 [ERROR] uvicorn.error: [Model] errors for: ['nuvocare/WikiMedical_sent_biobert', 'pritamdeka/S-PubMedBERT-MS-MARCO']
+2025-09-26 00:51:40,887 [INFO] uvicorn.error: [startup] PID=911636: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.69s
+2025-09-26 00:51:40,887 [INFO] uvicorn.error: [startup] PID=911636: orchestrator agent ready
+2025-09-26 00:51:40,887 [INFO] uvicorn.error: [startup] PID=911636: complete in 8.69s
+2025-09-26 00:51:40,888 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:53:01,287 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:53:01,388 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:53:01,389 [INFO] uvicorn.error: [shutdown] PID=911636: cleanup complete
+2025-09-26 00:53:01,389 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:53:01,389 [INFO] uvicorn.error: Finished server process [911636]
+2025-09-26 00:53:13,326 [INFO] uvicorn.error: Started server process [915770]
+2025-09-26 00:53:13,326 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:53:13,327 [INFO] uvicorn.error: [startup] PID=915770: initializing resources...
+2025-09-26 00:53:13,327 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:53:13,328 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:53:13,329 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:53:13,330 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:53:13,332 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:53:15,748 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:53:17,301 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:53:17,746 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:53:18,171 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 00:53:21,132 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:53:21,133 [INFO] uvicorn.error: [Model] preload complete (5/5) loaded
+2025-09-26 00:53:21,133 [INFO] uvicorn.error: [startup] PID=915770: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 7.81s
+2025-09-26 00:53:21,134 [INFO] uvicorn.error: [startup] PID=915770: orchestrator agent ready
+2025-09-26 00:53:21,134 [INFO] uvicorn.error: [startup] PID=915770: complete in 7.81s
+2025-09-26 00:53:21,134 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:54:07,946 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:54:08,048 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:54:08,049 [INFO] uvicorn.error: [shutdown] PID=915770: cleanup complete
+2025-09-26 00:54:08,049 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:54:08,049 [INFO] uvicorn.error: Finished server process [915770]
+2025-09-26 00:55:18,243 [INFO] uvicorn.error: Started server process [921224]
+2025-09-26 00:55:18,243 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:55:18,244 [INFO] uvicorn.error: [startup] PID=921224: initializing resources...
+2025-09-26 00:55:18,244 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:55:18,245 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:55:18,246 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:55:18,251 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:55:18,254 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:55:20,916 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:55:21,466 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:55:22,560 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 00:55:23,902 [ERROR] uvicorn.error: [Model] FAILED to load 'malteos/scincl': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:55:27,401 [ERROR] uvicorn.error: [Model] FAILED to load 'pritamdeka/S-PubMedBERT-MS-MARCO': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 00:55:27,403 [INFO] uvicorn.error: [Model] preload complete (3/5) loaded
+2025-09-26 00:55:27,404 [ERROR] uvicorn.error: [Model] errors for: ['malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO']
+2025-09-26 00:55:27,404 [INFO] uvicorn.error: [startup] PID=921224: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 9.16s
+2025-09-26 00:55:27,404 [INFO] uvicorn.error: [startup] PID=921224: orchestrator agent ready
+2025-09-26 00:55:27,404 [INFO] uvicorn.error: [startup] PID=921224: complete in 9.16s
+2025-09-26 00:55:27,404 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:55:51,560 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:55:51,661 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:55:51,661 [INFO] uvicorn.error: [shutdown] PID=921224: cleanup complete
+2025-09-26 00:55:51,661 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:55:51,661 [INFO] uvicorn.error: Finished server process [921224]
+2025-09-26 00:57:32,351 [INFO] uvicorn.error: Started server process [926682]
+2025-09-26 00:57:32,352 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:57:32,352 [INFO] uvicorn.error: [startup] PID=926682: initializing resources...
+2025-09-26 00:57:32,352 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:57:32,353 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:57:32,354 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:57:32,356 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:57:32,357 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:57:34,974 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 00:57:35,956 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 00:57:37,142 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 00:57:38,567 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 00:57:41,967 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 00:57:41,967 [INFO] uvicorn.error: [Model] preload complete (5/5) loaded
+2025-09-26 00:57:41,968 [INFO] uvicorn.error: [startup] PID=926682: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 9.62s
+2025-09-26 00:57:41,968 [INFO] uvicorn.error: [startup] PID=926682: orchestrator agent ready
+2025-09-26 00:57:41,968 [INFO] uvicorn.error: [startup] PID=926682: complete in 9.62s
+2025-09-26 00:57:41,969 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 00:59:45,056 [INFO] uvicorn.error: Shutting down
+2025-09-26 00:59:45,157 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 00:59:45,158 [INFO] uvicorn.error: [shutdown] PID=926682: cleanup complete
+2025-09-26 00:59:45,158 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 00:59:45,158 [INFO] uvicorn.error: Finished server process [926682]
+2025-09-26 00:59:57,071 [INFO] uvicorn.error: Started server process [932813]
+2025-09-26 00:59:57,071 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 00:59:57,071 [INFO] uvicorn.error: [startup] PID=932813: initializing resources...
+2025-09-26 00:59:57,072 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 00:59:57,072 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 00:59:57,073 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 00:59:57,075 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 00:59:57,076 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 00:59:59,331 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 01:00:00,650 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 01:00:01,360 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 01:00:01,727 [ERROR] uvicorn.error: [Model] FAILED to load 'nuvocare/WikiMedical_sent_biobert': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 01:00:05,456 [ERROR] uvicorn.error: [Model] FAILED to load 'pritamdeka/S-PubMedBERT-MS-MARCO': Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+Traceback (most recent call last):
+  File "/home/abhishekh/bioc/app/services/model_loader.py", line 65, in load_model
+    model = SentenceTransformer(name)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/sentence_transformers/SentenceTransformer.py", line 367, in __init__
+    self.to(device)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1369, in to
+    return self._apply(convert)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 928, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 955, in _apply
+    param_applied = fn(param)
+  File "/home/abhishekh/anaconda3/envs/ttd3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1362, in convert
+    raise NotImplementedError(
+NotImplementedError: Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-09-26 01:00:05,457 [INFO] uvicorn.error: [Model] preload complete (3/5) loaded
+2025-09-26 01:00:05,458 [ERROR] uvicorn.error: [Model] errors for: ['nuvocare/WikiMedical_sent_biobert', 'pritamdeka/S-PubMedBERT-MS-MARCO']
+2025-09-26 01:00:05,458 [INFO] uvicorn.error: [startup] PID=932813: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.39s
+2025-09-26 01:00:05,458 [INFO] uvicorn.error: [startup] PID=932813: orchestrator agent ready
+2025-09-26 01:00:05,458 [INFO] uvicorn.error: [startup] PID=932813: complete in 8.39s
+2025-09-26 01:00:05,459 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 01:00:44,844 [INFO] uvicorn.error: Shutting down
+2025-09-26 01:00:44,945 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 01:00:44,945 [INFO] uvicorn.error: [shutdown] PID=932813: cleanup complete
+2025-09-26 01:00:44,945 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 01:00:44,946 [INFO] uvicorn.error: Finished server process [932813]
+2025-09-26 01:00:59,199 [INFO] uvicorn.error: Started server process [935591]
+2025-09-26 01:00:59,200 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 01:00:59,200 [INFO] uvicorn.error: [startup] PID=935591: initializing resources...
+2025-09-26 01:00:59,201 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 01:00:59,201 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 01:00:59,203 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 01:00:59,204 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 01:00:59,210 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 01:01:01,775 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 01:01:02,956 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 01:01:03,885 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 01:01:04,783 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 01:01:07,469 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 01:01:07,469 [INFO] uvicorn.error: [Model] preload complete (5/5) loaded
+2025-09-26 01:01:07,470 [INFO] uvicorn.error: [startup] PID=935591: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.27s
+2025-09-26 01:01:07,470 [INFO] uvicorn.error: [startup] PID=935591: orchestrator agent ready
+2025-09-26 01:01:07,470 [INFO] uvicorn.error: [startup] PID=935591: complete in 8.27s
+2025-09-26 01:01:07,470 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 01:02:01,703 [INFO] uvicorn.error: Shutting down
+2025-09-26 01:02:01,804 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 01:02:01,804 [INFO] uvicorn.error: [shutdown] PID=935591: cleanup complete
+2025-09-26 01:02:01,804 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 01:02:01,804 [INFO] uvicorn.error: Finished server process [935591]
+2025-09-26 01:02:14,439 [INFO] uvicorn.error: Started server process [938941]
+2025-09-26 01:02:14,440 [INFO] uvicorn.error: Waiting for application startup.
+2025-09-26 01:02:14,440 [INFO] uvicorn.error: [startup] PID=938941: initializing resources...
+2025-09-26 01:02:14,440 [INFO] uvicorn.error: [Model] loading 'FremyCompany/BioLORD-2023-S'...
+2025-09-26 01:02:14,441 [INFO] uvicorn.error: [Model] loading 'malteos/scincl'...
+2025-09-26 01:02:14,442 [INFO] uvicorn.error: [Model] loading 'pritamdeka/S-PubMedBERT-MS-MARCO'...
+2025-09-26 01:02:14,444 [INFO] uvicorn.error: [Model] loading 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'...
+2025-09-26 01:02:14,449 [INFO] uvicorn.error: [Model] loading 'nuvocare/WikiMedical_sent_biobert'...
+2025-09-26 01:02:16,995 [INFO] uvicorn.error: [Model] loaded 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext'.
+2025-09-26 01:02:17,318 [INFO] uvicorn.error: [Model] loaded 'FremyCompany/BioLORD-2023-S'.
+2025-09-26 01:02:18,839 [INFO] uvicorn.error: [Model] loaded 'nuvocare/WikiMedical_sent_biobert'.
+2025-09-26 01:02:19,209 [INFO] uvicorn.error: [Model] loaded 'malteos/scincl'.
+2025-09-26 01:02:23,120 [INFO] uvicorn.error: [Model] loaded 'pritamdeka/S-PubMedBERT-MS-MARCO'.
+2025-09-26 01:02:23,121 [INFO] uvicorn.error: [Model] preload complete (5/5) loaded
+2025-09-26 01:02:23,121 [INFO] uvicorn.error: [startup] PID=938941: models preloaded ['FremyCompany/BioLORD-2023-S', 'malteos/scincl', 'pritamdeka/S-PubMedBERT-MS-MARCO', 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext', 'nuvocare/WikiMedical_sent_biobert'] in 8.68s
+2025-09-26 01:02:23,121 [INFO] uvicorn.error: [startup] PID=938941: orchestrator agent ready
+2025-09-26 01:02:23,122 [INFO] uvicorn.error: [startup] PID=938941: complete in 8.68s
+2025-09-26 01:02:23,122 [INFO] uvicorn.error: Application startup complete.
+2025-09-26 11:55:25,502 [INFO] uvicorn.error: Shutting down
+2025-09-26 11:55:25,603 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-09-26 11:55:25,603 [INFO] uvicorn.error: [shutdown] PID=938941: cleanup complete
+2025-09-26 11:55:25,603 [INFO] uvicorn.error: Application shutdown complete.
+2025-09-26 11:55:25,604 [INFO] uvicorn.error: Finished server process [938941]

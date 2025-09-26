@@ -10,14 +10,14 @@ from contextlib import asynccontextmanager, suppress
 import logging
 from dotenv import load_dotenv
 from agents import Agent
-from config.logging_setup import setup_logging_uvicorn_style
+# from app.config.logging_setup import setup_logging_uvicorn_style
+from app.services.model_loader import BIOMEDICAL_MODELS, preload_sentence_models
+from app.config.logging_setup import setup_logging_uvicorn_style
+
+
 load_dotenv(override=True)
 
-# logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
-# Use uvicorn.error so logs appear under Uvicorn by default
-# logger = logging.getLogger("uvicorn.error")
-
-logger = setup_logging_uvicorn_style(loglevel="INFO", logfile="biochirp.log")
+logger = setup_logging_uvicorn_style("INFO", logfile="biochirp.log")
 
 
 
@@ -62,7 +62,8 @@ async def lifespan(app: FastAPI):
     # ---- Sentence models
     try:
         t = time.perf_counter()
-        app.state.model_cache = preload_sentence_models(BIOMEDICAL_MODELS)
+        app.state.model_cache = preload_sentence_models(logger=logger)
+
         dt = time.perf_counter() - t
         logger.info("[startup] PID=%s: models preloaded %s in %.2fs", pid, BIOMEDICAL_MODELS, dt)
     except Exception as e:
@@ -107,6 +108,6 @@ async def lifespan(app: FastAPI):
 
 
 
-appc = FastAPI(lifespan=lifespan)
-appc.include_router(health.router)
-appc.include_router(ws.router)
+app = FastAPI(lifespan=lifespan)
+app.include_router(health.router)
+# app.include_router(ws.router)

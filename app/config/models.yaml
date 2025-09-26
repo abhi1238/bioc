@@ -1,0 +1,7 @@
+biomedical_models:
+  - FremyCompany/BioLORD-2023-S
+  - malteos/scincl
+  - pritamdeka/S-PubMedBERT-MS-MARCO
+  - cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+  - nuvocare/WikiMedical_sent_biobert
+  
