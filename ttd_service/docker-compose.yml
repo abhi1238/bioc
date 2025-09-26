@@ -1,0 +1,14 @@
+
+
+services:
+  biochirp_ttd_service:
+    build: .
+    image: biochirp_ttd_service:latest
+    container_name: biochirp_ttd_service
+    ports:
+      - "8012:8012"
+    environment:
+      - TZ=Asia/Kolkata         # Set your timezone or add other env vars
+    volumes:
+      - ./data:/app/data:ro     # Mount local ./data folder as read-only
+    restart: unless-stopped     # Restart container unless manually stopped
