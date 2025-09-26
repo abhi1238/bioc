@@ -1,0 +1,31 @@
+services:
+  biochirp_biolord:
+    build: .
+    environment:
+      - MODEL_NAME=FremyCompany/BioLORD-2023-S
+    ports:
+      - "8006:8005"
+  biochirp_scincl:
+    build: .
+    environment:
+      - MODEL_NAME=malteos/scincl
+    ports:
+      - "8007:8005"
+  biochirp_pubmedbert:
+    build: .
+    environment:
+      - MODEL_NAME=pritamdeka/S-PubMedBERT-MS-MARCO
+    ports:
+      - "8009:8005"
+  biochirp_sapbert:
+    build: .
+    environment:
+      - MODEL_NAME=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+    ports:
+      - "8010:8005"
+  biochirp_wikimedical:
+    build: .
+    environment:
+      - MODEL_NAME=nuvocare/WikiMedical_sent_biobert
+    ports:
+      - "8011:8005"

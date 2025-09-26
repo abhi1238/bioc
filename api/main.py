@@ -13,12 +13,13 @@ from agents import Agent
 # from app.config.logging_setup import setup_logging_uvicorn_style
 from app.services.model_loader import BIOMEDICAL_MODELS, preload_sentence_models
 from app.config.logging_setup import setup_logging_uvicorn_style
-
+from app.config.settings import Settings
+import requests
 
 load_dotenv(override=True)
 
 logger = setup_logging_uvicorn_style("INFO", logfile="biochirp.log")
-
+settings = Settings() 
 
 
 @asynccontextmanager
@@ -39,6 +40,8 @@ async def lifespan(app: FastAPI):
             "CTD": "Comparative Toxicogenomics Database",
             "HCDT": "Highly Confident Drug-Target Database",
         }
+
+        # DB_MAPPING
     )
 
     # ---- DB Value

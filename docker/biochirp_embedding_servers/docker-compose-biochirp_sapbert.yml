@@ -1,0 +1,8 @@
+services:
+  biochirp_sapbert:
+    build: .
+    container_name: biochirp_sapbert
+    environment:
+      - MODEL_NAME=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+    ports:
+      - "8010:8005"

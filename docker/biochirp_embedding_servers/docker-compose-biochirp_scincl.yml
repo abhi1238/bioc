@@ -1,0 +1,8 @@
+services:
+  biochirp_scincl:
+    build: .
+    container_name: biochirp_scincl
+    environment:
+      - MODEL_NAME=malteos/scincl
+    ports:
+      - "8007:8005"

@@ -1,0 +1,8 @@
+services:
+  biochirp_biolord:
+    build: .
+    container_name: biochirp_biolord
+    environment:
+      - MODEL_NAME=FremyCompany/BioLORD-2023-S
+    ports:
+      - "8006:8005"

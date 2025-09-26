@@ -1,0 +1,8 @@
+services:
+  biochirp_wikimedical:
+    build: .
+    container_name: biochirp_wikimedical
+    environment:
+      - MODEL_NAME=nuvocare/WikiMedical_sent_biobert
+    ports:
+      - "8011:8005"

@@ -1,0 +1,8 @@
+services:
+  biochirp_pubmedbert:
+    build: .
+    container_name: biochirp_pubmedbert
+    environment:
+      - MODEL_NAME=pritamdeka/S-PubMedBERT-MS-MARCO
+    ports:
+      - "8009:8005"

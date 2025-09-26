@@ -1,7 +1,17 @@
+# import logging
 from sentence_transformers import SentenceTransformer
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from app.utils.logger import get_fallback_logger
 from app.config.model_config import BIOMEDICAL_MODELS
+
+
+BIOMEDICAL_MODELS = [
+    "FremyCompany/BioLORD-2023-S",
+    "malteos/scincl",
+    "pritamdeka/S-PubMedBERT-MS-MARCO",
+    "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+    "nuvocare/WikiMedical_sent_biobert",
+]
 
 
 def preload_sentence_models(model_names=None, max_workers=5, logger=None):
