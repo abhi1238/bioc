@@ -1,14 +1,14 @@
 services:
   biochirp_ttd_service:
     build:
-      context: ..
+      context: .      
       dockerfile: ttd_service/Dockerfile
     container_name: biochirp_ttd_service
     image: biochirp_ttd_service:latest
     ports:
-      - "8012:8012"
+      - "8011:8011"
     environment:
       - TZ=Asia/Kolkata
     volumes:
-      - ./data:/app/data:ro
+      - ./ttd_service/data:/app/data:ro
     restart: unless-stopped
