@@ -2,24 +2,24 @@
 
 A production-ready FastAPI server for biomedical SentenceTransformer models, served as REST APIs in Docker containers.
 
-🚀 Quick Start
+## 🚀 Quick Start
 
 Open a terminal and run:
 
-## Step 1: Build the Docker Image
+### Step 1: Build the Docker Image
 
 ```bash
 cd ~/bioc/docker/biochirp_embedding_servers
 docker build -t biochirp_embedding_server .
 ```
 
-## Step 2: Run the Embedding Server
+### Step 2: Run the Embedding Server
 
 You can run individual embedding servers, or all servers at once.
 
-### **Option A: Run a Single Embedding Server**
+#### **Option A: Run a Single Embedding Server**
 
-### 1. Foreground Mode (default, shows logs)
+##### 1. Foreground Mode (default, shows logs)
 
 ```bash
 docker compose -f docker-compose-biochirp_wikimedical.yml up
@@ -36,7 +36,7 @@ docker compose -f docker-compose-biochirp_biolord.yml up
 * To stop the server, use Ctrl+C.
 
 
-### 2. Detached Mode (optional, runs in background)
+##### 2. Detached Mode (optional, runs in background)
 
 If you want to run any server in the background (no logs in terminal), add -d:
 
@@ -56,7 +56,7 @@ docker compose -f docker-compose-biochirp_wikimedical.yml down
 
 ```
 
-### **Option B: Run All Embedding Servers Together (Recommended)**
+#### **Option B: Run All Embedding Servers Together (Recommended)**
 
 Run all models in one go (best for full deployment/benchmarking):
 

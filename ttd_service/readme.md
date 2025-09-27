@@ -1,8 +1,8 @@
-🚀 Quick Start
+# 🚀  Quick Start
 
 Follow these steps to quickly build and run the TTD service using Docker.
 
-# Step 1: Step 1: Build & Start the Docker Container
+## Step 1: Step 1: Build & Start the Docker Container
 
 Open a terminal and run:
 
@@ -13,7 +13,7 @@ docker compose up --build
 
 * This command will build the Docker image and start the TTD service container.
 
-# Step 2: Access the Service
+## Step 2: Access the Service
 
 Once the container is running, the TTD API will be available at:
 
