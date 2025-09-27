@@ -1,14 +1,12 @@
 services:
   biochirp_ttd_service:
     build:
-      context: ..
-      dockerfile: ttd_service/Dockerfile
+      context: .              # Use local ttd_service/ as build context
+      dockerfile: Dockerfile
     container_name: biochirp_ttd_service
     image: biochirp_ttd_service:latest
     ports:
       - "8012:8012"
     environment:
       - TZ=Asia/Kolkata
-    volumes:
-      - ./data:/app/data:ro
     restart: unless-stopped
