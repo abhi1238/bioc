@@ -23,3 +23,32 @@ cd ~/bioc/docker/biochirp_embedding_servers
 docker compose -f docker-compose.biochirp_all.yml up
 ```
 
+
+### Step 3: Build the Docker Image for TTD service.
+
+
+Open a terminal and run:
+
+```bash
+cd ~/bioc/ttd_service
+docker compose up --build
+```
+
+* This command will build the Docker image and start the TTD service container.
+
+
+### Step 4: Build the Docker Image for CTD service.
+
+
+Open a terminal and run:
+
+```bash
+cd ~/bioc/ctd_service
+docker compose up --build
+```
+
+* This command will build the Docker image and start the CTD service container.
+
+
+
+

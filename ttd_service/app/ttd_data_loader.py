@@ -5,7 +5,7 @@ from pathlib import Path
 import logging
 from os import getcwd
 import os
-from polars import col, String # Import convenience
+from polars import col, String 
 
 
 def get_fallback_logger(name="biochirp.tmp"):
