@@ -15,7 +15,7 @@ docker compose up --build
 
 ## Step 2: Access the Service
 
-Once the container is running, the TTD API will be available at:
+Once the container is running, the CTD API will be available at:
 
 ```bash
 http://localhost:8013

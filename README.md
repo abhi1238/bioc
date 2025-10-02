@@ -51,4 +51,18 @@ docker compose up --build
 
 
 
+### Step 5: Build the Docker Image for HCDT service.
+
+
+Open a terminal and run:
+
+```bash
+cd ~/bioc/hcdt_service
+docker compose up --build
+```
+
+* This command will build the Docker image and start the HCDT service container.
+
+
+
 

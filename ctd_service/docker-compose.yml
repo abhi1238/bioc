@@ -1,6 +1,8 @@
 services:
   biochirp_ctd_service:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     image: biochirp_ctd_service:latest
     container_name: biochirp_ctd_service
     ports:
