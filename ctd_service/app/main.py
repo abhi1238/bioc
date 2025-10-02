@@ -1,8 +1,10 @@
 from fastapi import FastAPI, HTTPException
-from data_loader import return_preprocessed_ctd
+from app.ctd_data_loader import return_preprocessed_ctd
 
 app = FastAPI(title="BioChirp CTD Service", version="1.0.0", description="API to serve preprocessed CTD Parquet tables")
 db = return_preprocessed_ctd()
+
+print(db)
 
 @app.get("/tables")
 def list_tables():

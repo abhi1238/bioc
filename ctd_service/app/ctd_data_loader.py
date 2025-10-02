@@ -217,7 +217,9 @@
 import polars as pl
 from pathlib import Path
 import logging
-
+from os import getcwd
+import os
+from polars import col, String 
 
 
 
@@ -251,22 +253,46 @@ def get_fallback_logger(name="biochirp.tmp"):
 
 
 
-def ensure_exists(path):
+def ensure_exists(filename: str, data_dir="data") -> str:
     """
-    Check if a file exists at the given path.
+    Check if a file exists in the given data_dir or at an absolute path.
 
     Args:
-        path (str or Path): Path to the file.
+        filename (str): Filename (not full path).
+        data_dir (str): Relative or absolute directory where to look for the file.
 
     Returns:
-        str or Path: The same path if the file exists.
+        str: Absolute path if the file exists.
 
     Raises:
-        FileNotFoundError: If the file does not exist.
+        FileNotFoundError: If the file does not exist, with diagnostics.
     """
-    if not Path(path).exists():
-        raise FileNotFoundError(f"{path} not found!")
-    return path
+    # Prefer Path for everything
+
+    try:
+    # Script mode: use file path
+        PROJECT_ROOT = Path(__file__).resolve().parents[1]
+    except NameError:
+        # Notebook mode: use cwd, then go up two parents (like parents[2])
+        PROJECT_ROOT = Path(os.getcwd()).resolve().parents[1]
+
+    file_path = Path(PROJECT_ROOT)/ data_dir / filename
+
+    file_path = Path(file_path).resolve()
+
+    try:
+        if not file_path.exists():
+            raise FileNotFoundError
+        return str(file_path)
+    except Exception as e:
+        msg = (
+            f"File not found: '{file_path}'\n"
+            f"  Current working directory: {getcwd()}\n"
+            f"  Searched for file at: {file_path}\n"
+            f"  Exception: {e.__class__.__name__}: {e}\n"
+            "  TIP: Double-check your relative path and working directory."
+        )
+        raise FileNotFoundError(msg)
 
 def read_parquet_polars(path, name=None):
     """
@@ -290,49 +316,28 @@ def return_preprocessed_ctd(data_dir="data", logger=None) -> dict[str, pl.DataFr
     if logger is None:
         logger = get_fallback_logger()
 
-
-
     try:
         logger.info("[CTD] Started loading CTD database...")
 
-        print("cwd:", os.getcwd())
-        print("file exists:", Path("data/chem_gene_association.parquet").exists())
-
-        print("hi")
-
-        p = lambda *a: str(Path(data_dir, *a))
-
-        # print(p)
-
-        f_chem_gene   = ensure_exists(p("chem_gene_association.parquet"))
-        f_chems       = ensure_exists(p("chemical_master_table.parquet"))
-        f_chem_dis    = ensure_exists(p("chemical_disease_association.parquet"))
-        f_diseases    = ensure_exists(p("disease_master_table.parquet"))
-        f_dis_path    = ensure_exists(p("disease_pathway_association.parquet"))
-        f_genes       = ensure_exists(p("gene_master_table.parquet"))
-        f_gene_path   = ensure_exists(p("gene_pathway_association.parquet"))
-        f_pathways    = ensure_exists(p("pathway_master_table.parquet"))
-
-
-        print(f_chem_gene)
-        # logger.info(f_chem_gene)
-
+        f_chem_gene   = ensure_exists("chem_gene_association.parquet")
+        f_chems       = ensure_exists("chemical_master_table.parquet")
+        f_chem_dis    = ensure_exists("chemical_disease_association.parquet")
+        f_diseases    = ensure_exists("disease_master_table.parquet")
+        f_dis_path    = ensure_exists("disease_pathway_association.parquet")
+        f_genes       = ensure_exists("gene_master_table.parquet")
+        f_gene_path   = ensure_exists("gene_pathway_association.parquet")
+        f_pathways    = ensure_exists("pathway_master_table.parquet")
 
         tasks = {
-            "chemical_gene_association": lambda: read_parquet_polars(f_chem_gene, "chem_gene_association"),
-            "chemical_master_table": lambda: read_parquet_polars(f_chems, "chemical_master_table"),
-            "chemical_disease_association": lambda: read_parquet_polars(f_chem_dis, "chemical_disease_association"),
-            "disease_master_table": lambda: read_parquet_polars(f_diseases, "disease_master_table"),
-            "disease_pathway_association": lambda: read_parquet_polars(f_dis_path, "disease_pathway_association"),
-            "gene_master_table": lambda: read_parquet_polars(f_genes, "gene_master_table"),
-            "gene_pathway_association": lambda: read_parquet_polars(f_gene_path, "gene_pathway_association"),
-            "pathway_master_table": lambda: read_parquet_polars(f_pathways, "pathway_master_table"),
+            "chemical_gene_association": read_parquet_polars(f_chem_gene),
+            "chemical_master_table": read_parquet_polars(f_chems),
+            "chemical_disease_association": read_parquet_polars(f_chem_dis),
+            "disease_master_table": read_parquet_polars(f_diseases),
+            "disease_pathway_association": read_parquet_polars(f_dis_path),
+            "gene_master_table": read_parquet_polars(f_genes),
+            "gene_pathway_association": read_parquet_polars(f_gene_path),
+            "pathway_master_table": read_parquet_polars(f_pathways),
         }
-
-        print("new")
-
-        results = {name: fn() for name, fn in tasks.items()}
-
 
         mapping = {
         "# ChemicalName": "drug_name", "ChemicalName": "drug_name",
@@ -345,8 +350,9 @@ def return_preprocessed_ctd(data_dir="data", logger=None) -> dict[str, pl.DataFr
         "PathwayID": "pathway_id",
         "InferenceGeneSymbol" : "gene_name"}
 
+        results = dict()
 
-        for name, df in results.items():
+        for name, df in tasks.items():
             rename_dict = {c: mapping[c] for c in df.columns if c in mapping}
             if rename_dict:
                 df = df.rename(rename_dict)
