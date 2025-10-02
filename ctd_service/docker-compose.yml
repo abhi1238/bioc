@@ -1,0 +1,12 @@
+services:
+  biochirp_ctd_service:
+    build: .
+    image: biochirp_ctd_service:latest
+    container_name: biochirp_ctd_service
+    ports:
+      - "8013:8013"
+    environment:
+      - TZ=Asia/Kolkata
+    volumes:
+      - ./data:/app/data:ro      # Mount your local data directory into the container (read-only)
+    restart: unless-stopped

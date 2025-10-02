@@ -1,0 +1,11 @@
+# docker/docker-compose.interpreter_agent.yml
+
+services:
+  interpreter_agent:
+    build:
+      image: biochirp_interpreter_agent
+      context: ../app/tools/interpreter_agent
+      dockerfile: Dockerfile
+    ports:
+      - "8014:8014"
+    restart: unless-stopped
