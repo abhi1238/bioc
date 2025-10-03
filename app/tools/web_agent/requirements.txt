@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+openai-agents  # or the package name of your agents SDK
+pydantic
+requests
+python-dotenv
