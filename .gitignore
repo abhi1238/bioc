@@ -3,3 +3,4 @@
 biochirp.log
 rough.md
 qdrant_datahcdt_service/data/drug_master_table.parquet
+hcdt_service/data/drug_master_table.parquet
