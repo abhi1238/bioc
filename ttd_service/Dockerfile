@@ -1,19 +1,18 @@
+
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy app code
-COPY ./app /app/app
+# Copy the code from local `app/` folder into /app 
+COPY ./app /app
 
-COPY ./data /app/data
+# Copy data (if needed)
+COPY ./data /data
 
-# Copy requirements
+# Copy requirements file
 COPY requirements.txt /app/requirements.txt
 
 # Install dependencies
-# RUN pip install --no-cache-dir -r /app/requirements.txt
 RUN pip install --no-cache-dir -i https://pypi.org/simple -r /app/requirements.txt
-
-
 # Expose API
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8012"]

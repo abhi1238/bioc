@@ -189,6 +189,8 @@ def return_preprocessed_ttd(data_dir="data", logger=None) -> dict[str, pl.DataFr
             "ttd_disease_download":  read_parquet_polars(f_ttd_disease),
         }
 
+        # print(tasks)
+
         mapping = {
             "DRUG_NAME": "drug_name", "Drug_Name": "drug_name",
             "GENE_SYMBOL": "gene_name", "Target": "gene_name",

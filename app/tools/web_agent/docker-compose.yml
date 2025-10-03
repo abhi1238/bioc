@@ -1,8 +1,18 @@
 
 services:
-  app:
+  biochirp_web_tool:
     build:
       context: .
       dockerfile: Dockerfile
+    image: biochirp_web_tool:latest
+    container_name: biochirp_web_tool
     ports:
-      - "8014:8014"
+      - "8015:8015"
+
+    environment:
+      - TZ=Asia/Kolkata
+
+    restart: unless-stopped
+
+
+

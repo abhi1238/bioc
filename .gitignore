@@ -6,4 +6,5 @@ qdrant_data
 # hcdt_service/data/drug_master_table.parquet
 # hcdt_service/data/drug_master_table.parquet
 hcdt_service
+rough
 
