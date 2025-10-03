@@ -2,4 +2,4 @@
 .env
 biochirp.log
 rough.md
-qdrant_data
+qdrant_datahcdt_service/data/drug_master_table.parquet
