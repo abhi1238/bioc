@@ -2,7 +2,8 @@
 .env
 biochirp.log
 rough.md
-qdrant_datahcdt_service/data/drug_master_table.parquet
-hcdt_service/data/drug_master_table.parquet
+qdrant_data
+# hcdt_service/data/drug_master_table.parquet
+# hcdt_service/data/drug_master_table.parquet
 hcdt_service
 
