@@ -21,6 +21,12 @@ app = FastAPI()
 
 # Setup your agent
 
+
+@app.get("/")
+def root():
+    return {"message": "Web service tool is running"}
+
+
 @app.post("/web_tool/", response_model=WebToolOutput)
 async def run_web_search(input_data: WebToolInput):
     try:

@@ -9,16 +9,26 @@ Open a terminal and run:
 cd ~/bioc/app/tools/web_agent
 ```
 
-### Step 2: Build and run (foreground)
 
+### Step 2: Run Options (choose one)
+
+* Foreground mode (runs in your terminal; logs visible; stops when you hit Ctrl+C):
 
 ```bash
 docker compose up --build
 ```
 
-### Step 3: Run in detached mode (background)
+* Detached mode (runs in background; use docker compose logs / docker compose down to manage):
+
 ```bash
 docker compose up --build -d
 ```
 
 * The service will listen on port 8015, so you can access it at: [Link](http://192.168.22.20:8015)
+
+
+### To stop and remove containers, run:
+
+```bash
+docker compose down
+```
