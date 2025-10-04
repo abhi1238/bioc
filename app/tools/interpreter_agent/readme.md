@@ -38,3 +38,5 @@ docker compose down
 ### API Documentation
 
 For interactive API docs and to test endpoints in your browser, visit: [Link](http://192.168.22.20:8016/docs)
+
+![alt text](image.png)
