@@ -39,4 +39,4 @@ docker compose down
 
 For interactive API docs and to test endpoints in your browser, visit: [Link](http://192.168.22.20:8017/docs)
 
-<!-- ![alt text](image.png) -->
+![alt text](image.png)

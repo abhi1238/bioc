@@ -81,3 +81,11 @@ docker compose up --build
 
 * The service will listen on port 8016, so you can access it at: [Link](http://192.168.22.20:8016)
 
+### Step 8: Build and Run the Readme Tool Docker Service
+```bash
+cd ~/bioc/app/tools/readme
+docker compose up --build
+```
+
+* The service will listen on port 8017, so you can access it at: [Link](http://192.168.22.20:8017)
+
