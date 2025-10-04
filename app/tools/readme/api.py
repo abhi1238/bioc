@@ -2,11 +2,9 @@
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from typing import List, Optional, Union
 from schema import ReadmeInput, ReadmeOutput
 
 import uvicorn
-from agents import Agent, Runner, WebSearchTool 
 
 app = FastAPI()
 

@@ -19,8 +19,6 @@ WebToolOutput.model_rebuild()
 
 app = FastAPI()
 
-# Setup your agent
-
 
 @app.get("/")
 def root():
@@ -30,10 +28,8 @@ def root():
 @app.post("/web_tool/", response_model=WebToolOutput)
 async def run_web_search(input_data: WebToolInput):
     try:
-
         # Use user-supplied instructions if present, else fallback to default
         system_prompt = input_data.instructions or prompt_md
-
         # Dynamically instantiate agent for this request
         web_agent = Agent(
             name="WebAgent",
