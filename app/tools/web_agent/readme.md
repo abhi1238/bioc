@@ -9,7 +9,6 @@ Open a terminal and run:
 cd ~/bioc/app/tools/web_agent
 ```
 
-
 ### Step 2: Run Options (choose one)
 
 * Foreground mode (runs in your terminal; logs visible; stops when you hit Ctrl+C):

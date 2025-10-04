@@ -64,5 +64,12 @@ docker compose up --build
 * This command will build the Docker image and start the HCDT service container.
 
 
+### Step 6: Build and Run the Web Search Tool Docker Service
+```bash
+cd ~/bioc/app/tools/web_agent
+docker compose up --build
+```
+
+* The service will listen on port 8015, so you can access it at: [Link](http://192.168.22.20:8015)
 
 
