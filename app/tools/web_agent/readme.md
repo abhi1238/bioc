@@ -1,7 +1,9 @@
 
 ## 🚀 Quick Start
 
-Open a terminal and run:
+Get your BioChirp Web Agent up and running in minutes.
+
+Step 1: Change Directory
 
 ### Step 1: Change directory
 
@@ -9,25 +11,31 @@ Open a terminal and run:
 cd ~/bioc/app/tools/web_agent
 ```
 
-### Step 2: Run Options (choose one)
+### Step 2: Start the Service (Choose One Option)
 
-* Foreground mode (runs in your terminal; logs visible; stops when you hit Ctrl+C):
+* A. Foreground mode (runs in your terminal; logs visible; stops when you hit Ctrl+C):
 
 ```bash
 docker compose up --build
 ```
 
-* Detached mode (runs in background; use docker compose logs / docker compose down to manage):
+* B. Detached mode (runs in background; use docker compose logs / docker compose down to manage):
 
 ```bash
 docker compose up --build -d
 ```
 
-* The service will listen on port 8015, so you can access it at: [Link](http://192.168.22.20:8015)
+### Step 3: Access the Web Agent
+
+The service will be available at: [Link](http://192.168.22.20:8015)
 
 
-### To stop and remove containers, run:
+### Step 4: Stop & Remove Containers
 
 ```bash
 docker compose down
 ```
+
+### API Documentation
+For interactive API docs and testing, visit:[Link](http://192.168.22.20:8015/docs)
+

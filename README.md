@@ -72,7 +72,12 @@ docker compose up --build
 
 * The service will listen on port 8015, so you can access it at: [Link](http://192.168.22.20:8015)
 
-⚠️
-❌
-✅
-🚀
+
+### Step 7: Build and Run the Interpreter Tool Docker Service
+```bash
+cd ~/bioc/app/tools/interpreter_agent
+docker compose up --build
+```
+
+* The service will listen on port 8016, so you can access it at: [Link](http://192.168.22.20:8016)
+
