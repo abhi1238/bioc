@@ -76,3 +76,7 @@ docker compose up --build
 :rocket:
 
 &#x1F680;
+
+:white_check_mark: Your build passed!
+:x: Test failed on line 42.
+:warning: The configuration is deprecated.
