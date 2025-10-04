@@ -72,11 +72,7 @@ docker compose up --build
 
 * The service will listen on port 8015, so you can access it at: [Link](http://192.168.22.20:8015)
 
-
-:rocket:
-
-&#x1F680;
-
-:white_check_mark: Your build passed!
-:x: Test failed on line 42.
-:warning: The configuration is deprecated.
+⚠️
+❌
+✅
+🚀
