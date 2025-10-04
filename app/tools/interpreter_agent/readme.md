@@ -1,8 +1,8 @@
 
 
-## 🚀 Quick Start
+## 🚀 Quick Start: Interpreter Agent
 
-Open a terminal and run:
+Get your BioChirp Interpreter Agent running in just a few steps.
 
 ### Step 1: Change directory
 
@@ -10,25 +10,31 @@ Open a terminal and run:
 cd ~/bioc/app/tools/interpreter_agent
 ```
 
-### Step 2: Run Options (choose one)
+### Step 2: Start the Service (Choose One Option)
 
-* Foreground mode (runs in your terminal; logs visible; stops when you hit Ctrl+C):
+* A. Foreground mode (runs in your terminal; logs visible; stops when you hit Ctrl+C):
 
 ```bash
 docker compose up --build
 ```
 
-* Detached mode (runs in background; use docker compose logs / docker compose down to manage):
+* B. Detached mode (runs in background; use docker compose logs / docker compose down to manage):
 
 ```bash
 docker compose up --build -d
 ```
 
-* The service will listen on port 8016, so you can access it at: [Link](http://192.168.22.20:8016)
+### Step 3: Access the Interpreter Agent
+
+* Once running, the service will be available at: [Link](http://192.168.22.20:8016)
 
 
-### To stop and remove containers, run:
+### Step 4: Stop & Remove Containers
 
 ```bash
 docker compose down
 ```
+
+### API Documentation
+
+For interactive API docs and to test endpoints in your browser, visit: [Link](http://192.168.22.20:8016/docs)
