@@ -10,7 +10,34 @@ from IPython.display import display, JSON
 
 load_dotenv(override=True)
 
-logger = logging.getLogger("uvicorn.error")
+# logger = logging.getLogger("uvicorn.error")
+def get_fallback_logger(name="biochirp.tmp"):
+    """
+    Return a logger instance for the given name, ensuring logging is always available.
+
+    If no root logger handlers are set (e.g., the app is run as a standalone script or test),
+    this function will automatically configure a basic console logger with INFO level.
+    This ensures that logs are never lost, whether or not a global logging setup exists.
+
+    Args:
+        name (str): The name of the logger to retrieve. Use a module- or component-specific
+                    string for easier log filtering. Defaults to "biochirp.tmp".
+
+    Returns:
+        logging.Logger: Configured logger instance, ready for use.
+
+    Example:
+        >>> from app.utils.logger import get_fallback_logger
+        >>> logger = get_fallback_logger("biochirp.services")
+        >>> logger.info("Logger is ready!")
+    """
+    logger = logging.getLogger(name)
+    if not logging.getLogger().hasHandlers():
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+        )
+    return logger
 
 @function_tool(
     name_override="web_tool",
@@ -22,6 +49,9 @@ async def web_tool(input: WebToolInput) -> WebToolOutput:
     """
     try:
 
+        logger = logging.getLogger("uvicorn.error")
+
+
         logger.info("[RUNNING] Web tool")
         print("[RUNNING] Web tool")
 
@@ -31,7 +61,6 @@ async def web_tool(input: WebToolInput) -> WebToolOutput:
 
         payload = {
         "query": input.query
-        # "instructions": "Answer in one word and cite a reliable source."
         }
 
         # try:
@@ -43,41 +72,6 @@ async def web_tool(input: WebToolInput) -> WebToolOutput:
         ).json()
 
         print("[Web tool] outout", str(fo))
-
-        #     # --- Process Response ---
-        #     if response.status_code == 200:
-        #         logger.info("\n Success! Web Agent executed.")
-                
-        #         # FastAPI returns a JSON response which requests.json() converts to a Python dict
-        #         data = response.json()
-
-        #         return WebToolOutput(answer=data.get("answer", "No answer found."))
-            
-
-        # except requests.Timeout:
-        #     logger.error("Request to web tool timed out.")
-        #     return WebToolOutput(answer="Web search timed out.")
-        # except requests.RequestException as e:
-        #     logger.error(f"Request to web tool failed: {e}")
-        #     return WebToolOutput(answer="Web search failed due to a request error.")
-        
-        # except:
-        #     logger.error(f"Request to web tool failed: {e}")
-        #     return WebToolOutput(answer="Web search failed due to a request error.")
-
-        # pc = require_ctx("prompt_var", prompt_var)
-        # instructions = pc['GenericWebSearchAgent']
-
-        # web_agent = Agent(
-        #     name="WebAgent",
-        #     model=os.getenv("WEB_AGENT_MODEL", "gpt-5-mini"),
-        #     instructions=instructions,
-        #     tools=[WebSearchTool()],
-        #     output_type=WebToolOutput
-        # )
-
-        # result = await Runner.run(web_agent, input.query)
-        # fo = getattr(result, "final_output", None)
 
         logger.info("[FINISHED] Web tool")
         print("[FINISHED] Web tool")

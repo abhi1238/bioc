@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-openai-agents  # or the package name of your agents SDK
+openai-agents
 pydantic
 requests
 python-dotenv
