@@ -1,0 +1,18 @@
+
+services:
+  biochirp_interpreter_tool:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: biochirp_interpreter_tool:latest
+    container_name: biochirp_interpreter_tool
+    ports:
+      - "8016:8016"
+
+    environment:
+      - TZ=Asia/Kolkata
+
+    restart: unless-stopped
+
+
+
