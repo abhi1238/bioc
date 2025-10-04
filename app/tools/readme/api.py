@@ -3,6 +3,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import List, Optional, Union
+from schema import ReadmeInput, ReadmeOutput
+
 import uvicorn
 from agents import Agent, Runner, WebSearchTool 
 
@@ -13,8 +15,8 @@ def root():
     return {"message": "Readme service tool is running"}
 
 
-@app.post("/readme_tool/", response_model=str)
-async def run_readme():
+@app.post("/readme_tool/", response_model=ReadmeOutput)
+async def run_readme(input:ReadmeInput):
     """
     Returns a well-structured Markdown summary of BioChirp's key features, supported queries, and output formats.
     Provides a user-friendly fallback message if any error occurs.
@@ -24,14 +26,14 @@ async def run_readme():
 
     logger = logging.getLogger("uvicorn.error")
 
-    logger.info("[RUNNING] readme tool")
+    logger.info("[readme tool] Running")
     print("[Running] readme tool")
 
     try:
 
-        logger.info("[FINISHED] readme tool")
-        return (
-            "#  BioChirp: Conversational Retrieval of Biomedical Data\n\n"
+        
+
+        msg =    ("#  BioChirp: Conversational Retrieval of Biomedical Data\n\n"
             "BioChirp is an open-source conversational agent for biomedical research and clinical data science. "
             "You can query trusted biomedical databases using **plain language** and receive structured, explainable answers. "
             "BioChirp handles drugs, genes, diseases, pathways, targets, and even ambiguous or rare biomedical terms.\n\n"
@@ -61,15 +63,18 @@ async def run_readme():
             "##  Usage Tips\n"
             "- Use common names, official terms, or abbreviations (e.g., 'BRCA1', 'imatinib', 'COPD')\n"
             "- BioChirp will clarify or search for any unfamiliar term automatically\n"
-            "- For complex tasks, you can ask for details about drugs, genes, diseases, targets, or recent biomedical literature\n"
-        )
+            "- For complex tasks, you can ask for details about drugs, genes, diseases, targets, or recent biomedical literature\n")
+        
+        logger.info("[readme tool] Finished")
+        
+        return ReadmeOutput(answer=msg)
+        
     except Exception:
 
         logger.exception("[readme tool] Error returning output from readme.")
 
-        return (
-            "# BioChirp: Capabilities Unavailable\n\n"
+        return ReadmeOutput(answer=
+            ("# BioChirp: Capabilities Unavailable\n\n"
             "Sorry, an unexpected error occurred while retrieving BioChirp's feature summary. "
-            "Please try again later or contact the support team if this issue persists."
-        )
+            "Please try again later or contact the support team if this issue persists."))
 
